@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top|center"
+    android:orientation="vertical"
+    android:background="#eaeaea">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/text_signUpInstructions"
+        android:textColor="#FF7F7F7F"
+        android:textIsSelectable="false"
+        android:textSize="20sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="40dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editText_firstName"
+        android:layout_gravity="center_horizontal"
+        android:padding="10dp"
+        android:hint="@string/field_first_name"
+        android:background="@drawable/my_edit_text_top"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:textStyle="normal"
+        android:textSize="15sp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editText_lastName"
+        android:layout_gravity="center_horizontal"
+        android:padding="10dp"
+        android:hint="@string/field_last_name"
+        android:background="@drawable/my_edit_text_middle"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="15sp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/editText_email"
+        android:layout_gravity="center_horizontal"
+        android:padding="10dp"
+        android:hint="@string/field_email"
+        android:background="@drawable/my_edit_text_middle"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="15sp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editText_company"
+        android:padding="10dp"
+        android:hint="@string/field_company"
+        android:background="@drawable/my_edit_text_middle"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="15sp"
+        android:textStyle="normal" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editText_manager"
+        android:padding="10dp"
+        android:hint="@string/field_manager"
+        android:background="@drawable/my_edit_text_middle"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        android:layout_gravity="center_horizontal" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/editText_password"
+        android:layout_gravity="center_horizontal"
+        android:padding="10dp"
+        android:hint="@string/field_password"
+        android:background="@drawable/my_edit_text_middle"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="15sp"
+        android:textStyle="normal" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:id="@+id/editText_confirmPassword"
+        android:layout_gravity="center_horizontal"
+        android:padding="10dp"
+        android:hint="@string/field_confirm_password"
+        android:background="@drawable/my_edit_text_bottom"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:layout_height="30dp"
+            android:text="@string/button_signUp"
+            android:textSize="20sp"
+            android:onClick="openLoginFSignUp"
+            android:background="@drawable/my_button_off"
+            android:textColor="@color/my_text_color_off"
+            android:layout_gravity="left"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="0dp"
+            style="?android:attr/borderlessButtonStyle"
+            android:textAllCaps="false"
+            android:textStyle="normal" />
+
+        <Button
+            android:layout_height="30dp"
+            android:text="@string/button_cancel"
+            android:textSize="20sp"
+            android:onClick="openLogin"
+            android:background="@drawable/my_button_off"
+            android:textColor="@color/my_text_color_off"
+            android:layout_gravity="end"
+            android:layout_weight="1"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="0dp"
+            style="?android:attr/borderlessButtonStyle"
+            android:textAllCaps="false"
+            android:textStyle="normal" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

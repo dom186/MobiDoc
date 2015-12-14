@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">MobiDoc</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="button_login">Sign in</string>
+    <string name="field_email">E-mail</string>
+    <string name="field_password">Password</string>
+    <string name="field_confirm_password">Confirm password</string>
+    <string name="field_manager">Manager</string>
+    <string name="field_company">Company</string>
+    <string name="field_last_name">Last name</string>
+    <string name="field_first_name">First name</string>
+    <string name="mobidoc">mobiDOC</string>
+    <string name="title_activity_dashboard">DashboardActivity</string>
+    <string name="button_browse">Browse</string>
+    <string name="button_profile">Profile</string>
+    <string name="button_logout">Logout</string>
+    <string name="title_activity_profile">ProfileActivity</string>
+    <string name="title_activity_browse">BrowseActivity</string>
+    <string name="button_forgotPW">Forgot password?</string>
+    <string name="button_signUp">Sign up</string>
+    <string name="title_activity_forgot_pw">ForgotPWActivity</string>
+    <string name="title_activity_sign_up">SignUpActivity</string>
+    <string name="text_forgotPWTopLine">Enter your e-mail address to</string>
+    <string name="text_forgotPWBottomLine">receive your password.</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="button_sendPassword">Send password</string>
+    <string name="text_signUpInstructions">Complete all fields to sign up.</string>
+</resources>

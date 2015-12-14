@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="#eaeaea">
+
+    <!-- Top navigation buttons -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#eaeaea">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="@string/button_browse"
+            android:layout_gravity="left|center_vertical"
+            android:textSize="20sp"
+            android:background="@drawable/my_button_left"
+            android:textColor="#ffffff"
+            style="?android:attr/borderlessButtonStyle"
+            android:textAllCaps="false"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="Home"
+            android:layout_gravity="center_vertical"
+            android:textSize="20sp"
+            android:background="@drawable/my_button_middle_middle_off"
+            android:textColor="@color/my_text_color_off"
+            style="?android:attr/borderlessButtonStyle"
+            android:textAllCaps="false"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:onClick="openDashboard" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:onClick="openProfile"
+            android:textSize="20sp"
+            android:background="@drawable/my_button_right_off"
+            android:textColor="@color/my_text_color_off"
+            style="?android:attr/borderlessButtonStyle"
+            android:textAllCaps="false"
+            android:layout_weight="1"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Profile" />
+
+    </LinearLayout>
+
+    <!-- Top four buttons -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#eaeaea">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="Grid"
+            android:layout_gravity="top"
+            android:onClick="gridLayout"
+            android:textSize="20sp"
+            android:background="@drawable/my_button_left"
+            android:textColor="#ffffff"
+            style="?android:attr/borderlessButtonStyle"
+            android:textAllCaps="false"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="List"
+            android:layout_gravity="top"
+            android:onClick="listLayout"
+            android:textSize="20sp"
+            android:textColor="@color/my_text_color_off"
+            style="?android:attr/borderlessButtonStyle"
+            android:textAllCaps="false"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/my_button_right_off" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="Name"
+            android:layout_gravity="top"
+            android:onClick="sortByName"
+            android:textSize="20sp"
+            android:background="@drawable/my_button_left"
+            android:textColor="#ffffff"
+            style="?android:attr/borderlessButtonStyle"
+            android:textAllCaps="false"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="Date"
+            android:layout_gravity="top"
+            android:onClick="sortByDate"
+            android:textSize="20sp"
+            android:background="@drawable/my_button_right_off"
+            android:textColor="@color/my_text_color_off"
+            style="?android:attr/borderlessButtonStyle"
+            android:textAllCaps="false"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp" />
+
+    </LinearLayout>
+
+    <!-- Scroll view encapsulates the documents -->
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#e5e5e5"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <!-- Document icons -->
+        <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:columnCount="3"
+            android:orientation="horizontal"
+            android:rowCount="6"
+            android:background="#eaeaea">
+
+            <TextView android:text="Document 1"
+                android:padding="10dp"
+                android:background="@drawable/my_document"
+                android:layout_margin="10dp"
+                android:layout_width="173dp"
+                android:layout_height="233dp"
+                android:gravity="center"
+                android:clickable="true" />
+            <TextView android:text="Document 2"
+                android:padding="10dp"
+                android:background="@drawable/my_document"
+                android:layout_margin="10dp"
+                android:layout_width="173dp"
+                android:layout_height="233dp"
+                android:gravity="center"
+                android:clickable="true"/>
+            <TextView android:text="Document 3"
+                android:padding="10dp"
+                android:background="@drawable/my_document"
+                android:layout_margin="10dp"
+                android:layout_width="173dp"
+                android:layout_height="233dp"
+                android:gravity="center"
+                android:clickable="true"/>
+            <TextView android:text="Document 4"
+                android:padding="10dp"
+                android:background="@drawable/my_document"
+                android:layout_margin="10dp"
+                android:layout_width="173dp"
+                android:layout_height="233dp"
+                android:gravity="center"
+                android:clickable="true"/>
+            <TextView android:text="Document 5"
+                android:padding="10dp"
+                android:background="@drawable/my_document"
+                android:layout_margin="10dp"
+                android:layout_width="173dp"
+                android:layout_height="233dp"
+                android:gravity="center"
+                android:clickable="true"/>
+            <TextView android:text="Document 1"
+                android:padding="10dp"
+                android:background="@drawable/my_document"
+                android:layout_margin="10dp"
+                android:layout_width="173dp"
+                android:layout_height="233dp"
+                android:gravity="center"
+                android:clickable="true"/>
+            <TextView android:text="Document 6"
+                android:padding="10dp"
+                android:background="@drawable/my_document"
+                android:layout_margin="10dp"
+                android:layout_width="173dp"
+                android:layout_height="233dp"
+                android:gravity="center"
+                android:clickable="true"/>
+            <TextView android:text="Document 7"
+                android:padding="10dp"
+                android:background="@drawable/my_document"
+                android:layout_margin="10dp"
+                android:layout_width="173dp"
+                android:layout_height="233dp"
+                android:gravity="center"
+                android:clickable="true"/>
+            <TextView android:text="Document 8"
+                android:padding="10dp"
+                android:background="@drawable/my_document"
+                android:layout_margin="10dp"
+                android:layout_width="173dp"
+                android:layout_height="233dp"
+                android:gravity="center"
+                android:clickable="true"/>
+            <TextView android:text="Document 9"
+                android:padding="10dp"
+                android:background="@drawable/my_document"
+                android:layout_margin="10dp"
+                android:layout_width="173dp"
+                android:layout_height="233dp"
+                android:gravity="center"
+                android:clickable="true"/>
+
+        </GridLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#eaeaea"
+    android:gravity="top|center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/text_forgotPWTopLine"
+        android:textColor="#FF7F7F7F"
+        android:textIsSelectable="false"
+        android:textSize="20sp"
+        android:layout_marginTop="40dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/text_forgotPWBottomLine"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#FF7F7F7F"
+        android:textSize="20sp"
+        android:layout_marginBottom="20dp" />
+
+    <EditText
+        android:id="@+id/editText_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:layout_gravity="center_horizontal"
+        android:padding="10dp"
+        android:hint="@string/field_email"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/my_edit_text_alon"
+        android:textSize="15sp"
+        android:textStyle="normal" />
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+
+        <Button
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_height="30dp"
+            android:text="@string/button_sendPassword"
+            android:textSize="20sp"
+            android:onClick="openLoginValidated"
+            android:background="@drawable/my_button_off"
+            android:textColor="@color/my_text_color_off"
+            android:layout_gravity="left"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="0dp"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:layout_height="30dp"
+            android:text="@string/button_cancel"
+            android:textSize="20sp"
+            android:onClick="openLogin"
+            android:background="@drawable/my_button_off"
+            android:textColor="@color/my_text_color_off"
+            android:layout_gravity="end"
+            android:layout_weight="1"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="0dp"
+            style="?android:attr/borderlessButtonStyle"
+            android:textAllCaps="false"/>
+
+    </LinearLayout>
+
+</LinearLayout>

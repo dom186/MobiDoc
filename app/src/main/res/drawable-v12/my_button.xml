@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- When button is in active state -->
+    <item>
+        <shape android:shape="rectangle"  >
+            <!-- Adds curvature to Left corners -->
+            <corners
+                android:radius="10dp"/>
+            <!-- Border -->
+            <stroke
+                android:width="2dp"
+                android:color="#a1a1a1"/>
+            <!-- Interior color -->
+            <solid android:color="#a1a1a1"/>
+        </shape>
+    </item>
+
+    <!-- When button is clicked -->
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle"  >
+            <!-- Adds curvature to Left corners -->
+            <corners
+                android:radius="10dp"/>
+            <!-- Border -->
+            <stroke
+                android:width="2dp"
+                android:color="#a1a1a1"/>
+            <!-- Interior color -->
+            <solid android:color="#cccccc"/>
+        </shape>
+    </item>
+
+</selector>

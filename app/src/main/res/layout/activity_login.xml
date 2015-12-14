@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top|center"
+    android:weightSum="1"
+    android:background="#eaeaea">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/mobidoc"
+        android:layout_gravity="center_horizontal"
+        android:textSize="@dimen/abc_action_bar_default_height_material"
+        android:textColor="#a1a1a1"
+        android:padding="10dp"
+        android:layout_marginBottom="20dp"
+        android:textStyle="normal"
+        android:layout_marginTop="40dp" />
+
+    <EditText
+        android:id="@+id/editText_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:hint="@string/field_email"
+        android:background="@drawable/my_edit_text_top"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="10dp"
+        android:textSize="15sp"
+        android:textIsSelectable="true"
+        android:textStyle="normal" />
+
+    <EditText
+        android:id="@+id/editText_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:padding="10dp"
+        android:hint="@string/field_password"
+        android:background="@drawable/my_edit_text_bottom"
+        android:autoText="false"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:password="true"
+        android:textSize="15sp"
+        android:textStyle="normal" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="@string/button_login"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:onClick="openDashboard"
+        android:background="@drawable/my_button_off"
+        android:textColor="@color/my_text_color_off"
+        android:layout_margin="20dp"
+        style="?android:attr/borderlessButtonStyle"
+        android:textAllCaps="false"
+        android:textStyle="normal" />
+
+    <GridLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/button_forgotPW"
+            android:layout_gravity="left"
+            android:onClick="openForgotPW"
+            android:clickable="true"
+            android:layout_marginLeft="20dp"
+            android:textColor="#a1a1a1"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/button_signUp"
+            android:gravity="right"
+            android:onClick="openSignUp"
+            android:clickable="true"
+            android:layout_marginRight="20dp"
+            android:textColor="#a1a1a1"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+
+    </GridLayout>
+
+</LinearLayout>
